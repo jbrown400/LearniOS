@@ -185,7 +185,19 @@
                     <view key="view" contentMode="scaleToFill" id="MDh-eJ-Wkx">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Home" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bpZ-Dm-YDe">
+                                <rect key="frame" x="184" y="437.5" width="46" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="bpZ-Dm-YDe" firstAttribute="centerY" secondItem="MDh-eJ-Wkx" secondAttribute="centerY" id="CcS-IB-lcl"/>
+                            <constraint firstItem="bpZ-Dm-YDe" firstAttribute="centerX" secondItem="MDh-eJ-Wkx" secondAttribute="centerX" id="wee-jl-uAH"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="gnr-o1-2gZ"/>
                     </view>
                     <navigationItem key="navigationItem" id="Fkp-Zx-4Kk"/>
