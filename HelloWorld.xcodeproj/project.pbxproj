@@ -13,6 +13,10 @@
 		D07C1D4424F1BC9400FCE1FA /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07C1D4324F1BC9400FCE1FA /* AuthManager.swift */; };
 		D07C1D4624F1BCDE00FCE1FA /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07C1D4524F1BCDE00FCE1FA /* StorageManager.swift */; };
 		D07C1D4824F2B74400FCE1FA /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07C1D4724F2B74400FCE1FA /* Extensions.swift */; };
+		D07C1D4B24F6C79E00FCE1FA /* IGFeedPostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07C1D4A24F6C79E00FCE1FA /* IGFeedPostTableViewCell.swift */; };
+		D07C1D4E24F6C8E500FCE1FA /* IGFeedPostHeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07C1D4D24F6C8E500FCE1FA /* IGFeedPostHeaderTableViewCell.swift */; };
+		D07C1D5024F6C91500FCE1FA /* IGFeedPostActionsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07C1D4F24F6C91500FCE1FA /* IGFeedPostActionsTableViewCell.swift */; };
+		D07C1D5224F6C93100FCE1FA /* IGFeedPostGeneralTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07C1D5124F6C93100FCE1FA /* IGFeedPostGeneralTableViewCell.swift */; };
 		D0DF0C3124F1785D0095740E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0DF0C3024F1785D0095740E /* AppDelegate.swift */; };
 		D0DF0C3324F1785D0095740E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0DF0C3224F1785D0095740E /* SceneDelegate.swift */; };
 		D0DF0C3524F1785D0095740E /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0DF0C3424F1785D0095740E /* HomeViewController.swift */; };
@@ -43,6 +47,10 @@
 		D07C1D4324F1BC9400FCE1FA /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
 		D07C1D4524F1BCDE00FCE1FA /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
 		D07C1D4724F2B74400FCE1FA /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		D07C1D4A24F6C79E00FCE1FA /* IGFeedPostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IGFeedPostTableViewCell.swift; sourceTree = "<group>"; };
+		D07C1D4D24F6C8E500FCE1FA /* IGFeedPostHeaderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IGFeedPostHeaderTableViewCell.swift; sourceTree = "<group>"; };
+		D07C1D4F24F6C91500FCE1FA /* IGFeedPostActionsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IGFeedPostActionsTableViewCell.swift; sourceTree = "<group>"; };
+		D07C1D5124F6C93100FCE1FA /* IGFeedPostGeneralTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IGFeedPostGeneralTableViewCell.swift; sourceTree = "<group>"; };
 		D0DF0C2D24F1785D0095740E /* HelloWorld.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloWorld.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0DF0C3024F1785D0095740E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D0DF0C3224F1785D0095740E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -112,6 +120,25 @@
 			path = General;
 			sourceTree = "<group>";
 		};
+		D07C1D4924F6C77000FCE1FA /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				D07C1D4C24F6C8C500FCE1FA /* HomeFeed */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		D07C1D4C24F6C8C500FCE1FA /* HomeFeed */ = {
+			isa = PBXGroup;
+			children = (
+				D07C1D4A24F6C79E00FCE1FA /* IGFeedPostTableViewCell.swift */,
+				D07C1D4D24F6C8E500FCE1FA /* IGFeedPostHeaderTableViewCell.swift */,
+				D07C1D4F24F6C91500FCE1FA /* IGFeedPostActionsTableViewCell.swift */,
+				D07C1D5124F6C93100FCE1FA /* IGFeedPostGeneralTableViewCell.swift */,
+			);
+			path = HomeFeed;
+			sourceTree = "<group>";
+		};
 		D0DF0C2424F1785D0095740E = {
 			isa = PBXGroup;
 			children = (
@@ -159,6 +186,7 @@
 		D0DF0C4524F179CA0095740E /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				D07C1D4924F6C77000FCE1FA /* Cells */,
 				D0DF0C3924F1785E0095740E /* Assets.xcassets */,
 				D0DF0C4824F179D90095740E /* Storyboards */,
 			);
@@ -342,19 +370,23 @@
 				D0DF0C4D24F17C970095740E /* CameraViewController.swift in Sources */,
 				D0DF0C3524F1785D0095740E /* HomeViewController.swift in Sources */,
 				D0DF0C6424F17D980095740E /* SearchResultsViewController.swift in Sources */,
+				D07C1D4E24F6C8E500FCE1FA /* IGFeedPostHeaderTableViewCell.swift in Sources */,
 				D0DF0C6624F17DBD0095740E /* PostEditorViewController.swift in Sources */,
 				D07C1D4624F1BCDE00FCE1FA /* StorageManager.swift in Sources */,
 				D0DF0C5824F17D140095740E /* RegistrationViewController.swift in Sources */,
 				D07C1D4224F1BBE400FCE1FA /* DatabaseManager.swift in Sources */,
 				D0DF0C5A24F17D2E0095740E /* PostViewController.swift in Sources */,
+				D07C1D4B24F6C79E00FCE1FA /* IGFeedPostTableViewCell.swift in Sources */,
 				D0DF0C4F24F17CA70095740E /* NotificationsViewController.swift in Sources */,
 				D0DF0C5624F17D0C0095740E /* LoginViewController.swift in Sources */,
 				D07C1D4824F2B74400FCE1FA /* Extensions.swift in Sources */,
+				D07C1D5224F6C93100FCE1FA /* IGFeedPostGeneralTableViewCell.swift in Sources */,
 				D0DF0C6224F17D910095740E /* SearchViewController.swift in Sources */,
 				D0DF0C5124F17CB60095740E /* ProfileViewController.swift in Sources */,
 				D07C1D4424F1BC9400FCE1FA /* AuthManager.swift in Sources */,
 				D0DF0C3124F1785D0095740E /* AppDelegate.swift in Sources */,
 				D0DF0C3324F1785D0095740E /* SceneDelegate.swift in Sources */,
+				D07C1D5024F6C91500FCE1FA /* IGFeedPostActionsTableViewCell.swift in Sources */,
 				D0DF0C6024F17D7B0095740E /* ListViewController.swift in Sources */,
 				D0DF0C5E24F17D690095740E /* SettingsViewController.swift in Sources */,
 			);
