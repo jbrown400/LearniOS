@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		1325F165CBA9783028AAAF3D /* Pods_HelloWorld.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4857DACA3A96A9FF3707208 /* Pods_HelloWorld.framework */; };
+		D079E73624FEE6A400063428 /* FormTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D079E73524FEE6A400063428 /* FormTableViewCell.swift */; };
+		D079E73924FEF16F00063428 /* PhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D079E73824FEF16F00063428 /* PhotoCollectionViewCell.swift */; };
+		D079E73B24FEF1A900063428 /* ProfileInfoHeaderCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D079E73A24FEF1A900063428 /* ProfileInfoHeaderCollectionReusableView.swift */; };
+		D079E73D24FEF1DB00063428 /* ProfileTabsCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D079E73C24FEF1DB00063428 /* ProfileTabsCollectionReusableView.swift */; };
 		D07C1D3F24F1B90C00FCE1FA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D07C1D3E24F1B90C00FCE1FA /* GoogleService-Info.plist */; };
 		D07C1D4224F1BBE400FCE1FA /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07C1D4124F1BBE400FCE1FA /* DatabaseManager.swift */; };
 		D07C1D4424F1BC9400FCE1FA /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07C1D4324F1BC9400FCE1FA /* AuthManager.swift */; };
@@ -42,6 +46,10 @@
 /* Begin PBXFileReference section */
 		9CECD75E8BCC01B5978D51A0 /* Pods-HelloWorld.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloWorld.debug.xcconfig"; path = "Target Support Files/Pods-HelloWorld/Pods-HelloWorld.debug.xcconfig"; sourceTree = "<group>"; };
 		C4857DACA3A96A9FF3707208 /* Pods_HelloWorld.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HelloWorld.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D079E73524FEE6A400063428 /* FormTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormTableViewCell.swift; sourceTree = "<group>"; };
+		D079E73824FEF16F00063428 /* PhotoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewCell.swift; sourceTree = "<group>"; };
+		D079E73A24FEF1A900063428 /* ProfileInfoHeaderCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileInfoHeaderCollectionReusableView.swift; sourceTree = "<group>"; };
+		D079E73C24FEF1DB00063428 /* ProfileTabsCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTabsCollectionReusableView.swift; sourceTree = "<group>"; };
 		D07C1D3E24F1B90C00FCE1FA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		D07C1D4124F1BBE400FCE1FA /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
 		D07C1D4324F1BC9400FCE1FA /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
@@ -105,6 +113,15 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		D079E73724FEF13B00063428 /* CollectionView Headers */ = {
+			isa = PBXGroup;
+			children = (
+				D079E73A24FEF1A900063428 /* ProfileInfoHeaderCollectionReusableView.swift */,
+				D079E73C24FEF1DB00063428 /* ProfileTabsCollectionReusableView.swift */,
+			);
+			path = "CollectionView Headers";
+			sourceTree = "<group>";
+		};
 		D07C1D4024F1BAC500FCE1FA /* General */ = {
 			isa = PBXGroup;
 			children = (
@@ -124,6 +141,8 @@
 			isa = PBXGroup;
 			children = (
 				D07C1D4C24F6C8C500FCE1FA /* HomeFeed */,
+				D079E73524FEE6A400063428 /* FormTableViewCell.swift */,
+				D079E73824FEF16F00063428 /* PhotoCollectionViewCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -186,6 +205,7 @@
 		D0DF0C4524F179CA0095740E /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				D079E73724FEF13B00063428 /* CollectionView Headers */,
 				D07C1D4924F6C77000FCE1FA /* Cells */,
 				D0DF0C3924F1785E0095740E /* Assets.xcassets */,
 				D0DF0C4824F179D90095740E /* Storyboards */,
@@ -373,15 +393,19 @@
 				D07C1D4E24F6C8E500FCE1FA /* IGFeedPostHeaderTableViewCell.swift in Sources */,
 				D0DF0C6624F17DBD0095740E /* PostEditorViewController.swift in Sources */,
 				D07C1D4624F1BCDE00FCE1FA /* StorageManager.swift in Sources */,
+				D079E73624FEE6A400063428 /* FormTableViewCell.swift in Sources */,
 				D0DF0C5824F17D140095740E /* RegistrationViewController.swift in Sources */,
+				D079E73D24FEF1DB00063428 /* ProfileTabsCollectionReusableView.swift in Sources */,
 				D07C1D4224F1BBE400FCE1FA /* DatabaseManager.swift in Sources */,
 				D0DF0C5A24F17D2E0095740E /* PostViewController.swift in Sources */,
 				D07C1D4B24F6C79E00FCE1FA /* IGFeedPostTableViewCell.swift in Sources */,
+				D079E73924FEF16F00063428 /* PhotoCollectionViewCell.swift in Sources */,
 				D0DF0C4F24F17CA70095740E /* NotificationsViewController.swift in Sources */,
 				D0DF0C5624F17D0C0095740E /* LoginViewController.swift in Sources */,
 				D07C1D4824F2B74400FCE1FA /* Extensions.swift in Sources */,
 				D07C1D5224F6C93100FCE1FA /* IGFeedPostGeneralTableViewCell.swift in Sources */,
 				D0DF0C6224F17D910095740E /* SearchViewController.swift in Sources */,
+				D079E73B24FEF1A900063428 /* ProfileInfoHeaderCollectionReusableView.swift in Sources */,
 				D0DF0C5124F17CB60095740E /* ProfileViewController.swift in Sources */,
 				D07C1D4424F1BC9400FCE1FA /* AuthManager.swift in Sources */,
 				D0DF0C3124F1785D0095740E /* AppDelegate.swift in Sources */,
