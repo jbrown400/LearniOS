@@ -9,6 +9,8 @@ target 'HelloWorld' do
 
   # App rating
   pod 'Appirater'
+  # Getting images from a url and manages caching
+  pod 'SDWebImage'
 
   # Firebase
   pod 'Firebase/Core'
